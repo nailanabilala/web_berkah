@@ -7,7 +7,7 @@ import HomePage from './pages/HomePage';
 import CatalogPage from './pages/CatalogPage';
 
 const App = () => {
-  const whatsappNumber = "6281234567890";
+  const whatsappNumber = "6285888185382";
 
   return (
     <Router>

@@ -4,10 +4,10 @@ import Card from '../ui/Card';
 
 const Process = () => {
     const shippingRates = [
-        { area: "Jakarta Selatan, Barat, Pusat", price: "Rp 150.000" },
-        { area: "Tangerang Kota & Tangsel", price: "Rp 150.000" },
-        { area: "Depok & Bekasi Kota", price: "Rp 250.000" },
-        { area: "Bogor Kota & Kab. Bekasi", price: "Rp 350.000" },
+        { area: "Bojonegoro, Tuban", price: "Rp 150.000" },
+        { area: "Surabaya", price: "Rp 150.000" },
+        { area: "Malang, Batu, Blitar, Tulungagung", price: "Rp 250.000" },
+        { area: "Banyuwangi", price: "Rp 350.000" },
     ];
 
     return (
@@ -87,9 +87,9 @@ const Process = () => {
                         </Card>
 
                         <div className="mt-6 p-4 border border-dashed border-zinc-300 rounded-xl bg-white">
-                            <h4 className="font-semibold text-sm mb-2">Luar Jabodetabek?</h4>
+                            <h4 className="font-semibold text-sm mb-2">Luar Jawa Timur?</h4>
                             <p className="text-sm text-zinc-500">
-                                Saat ini kami memprioritaskan Jabodetabek. Untuk luar kota, wajib menggunakan ekspedisi kargo langganan Anda (Risiko pengiriman ditanggung pembeli).
+                                Saat ini kami memprioritaskan Jawa Timur. Untuk luar kota, wajib menggunakan ekspedisi kargo langganan Anda (Risiko pengiriman ditanggung pembeli).
                             </p>
                         </div>
                     </div>

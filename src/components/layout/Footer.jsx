@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Instagram, MapPin } from 'lucide-react';
+import { MessageCircle, ShoppingBag, MapPin } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -31,15 +31,15 @@ const Footer = () => {
                         <ul className="space-y-3 text-sm">
                             <li className="flex items-center gap-3">
                                 <MessageCircle size={18} />
-                                <span>0812-3456-7890 (Admin WA)</span>
+                                <span>085-888-185-382 (Admin WA)</span>
                             </li>
                             <li className="flex items-center gap-3">
-                                <Instagram size={18} />
-                                <span>@berkahfurnitur_id</span>
+                                <ShoppingBag  size={18} />
+                                <span>@bangSyukron_furniture</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <MapPin size={18} />
-                                <span>Sawangan, Depok, Jawa Barat</span>
+                                <span>Bojonegoro, Jawa Timur</span>
                             </li>
                         </ul>
                     </div>

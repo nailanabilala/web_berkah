@@ -7,7 +7,7 @@ import Badge from '../ui/Badge';
 import { products } from '../../data/products';
 
 const Catalog = ({ isPreview = false }) => {
-    const whatsappNumber = "6281234567890";
+    const whatsappNumber = "6285888185382";
 
     const handleWhatsAppClick = (message) => {
         const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
