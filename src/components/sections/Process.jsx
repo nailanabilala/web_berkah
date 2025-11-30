@@ -2,6 +2,15 @@ import React from 'react';
 import { PenTool, Truck } from 'lucide-react';
 import Card from '../ui/Card';
 
+/**
+ * Process component detailing the ordering process and shipping information.
+ *
+ * Displays a step-by-step guide for ordering and a table of shipping rates
+ * based on the area.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Process component.
+ */
 const Process = () => {
     const shippingRates = [
         { area: "Bojonegoro, Tuban", price: "Rp 150.000" },

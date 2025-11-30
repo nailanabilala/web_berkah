@@ -1,3 +1,18 @@
+/**
+ * Array of product objects.
+ *
+ * Each object represents a furniture product with details such as ID, name, price,
+ * image URL, category, and description.
+ *
+ * @type {Array<{
+ *   id: number,
+ *   name: string,
+ *   price: string,
+ *   image: string,
+ *   category: string,
+ *   desc: string
+ * }>}
+ */
 export const products = [
     {
         id: 1,

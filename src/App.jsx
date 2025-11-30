@@ -6,6 +6,15 @@ import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
 import CatalogPage from './pages/CatalogPage';
 
+/**
+ * The main application component.
+ *
+ * Sets up the router, layout (Navbar and Footer), and routes for the application.
+ * Also includes a floating WhatsApp button for quick contact.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered App component.
+ */
 const App = () => {
   const whatsappNumber = "6285888185382";
 

@@ -6,9 +6,25 @@ import Card from '../ui/Card';
 import Badge from '../ui/Badge';
 import { products } from '../../data/products';
 
+/**
+ * Catalog component that displays a list of products.
+ *
+ * It supports a preview mode where only a subset of products are shown, and a full mode
+ * where all products are displayed. It also handles WhatsApp redirection for inquiries.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {boolean} [props.isPreview=false] - If true, displays only the first 4 products and a "See More" button.
+ * @returns {JSX.Element} The rendered Catalog component.
+ */
 const Catalog = ({ isPreview = false }) => {
     const whatsappNumber = "6285888185382";
 
+    /**
+     * Opens a WhatsApp chat with a pre-filled message.
+     *
+     * @param {string} message - The message to pre-fill in the WhatsApp chat.
+     */
     const handleWhatsAppClick = (message) => {
         const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');

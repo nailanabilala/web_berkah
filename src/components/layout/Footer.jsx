@@ -1,6 +1,14 @@
 import React from 'react';
 import { MessageCircle, ShoppingBag, MapPin } from 'lucide-react';
 
+/**
+ * Footer component for the application.
+ *
+ * Displays company information, navigation links, and contact details.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Footer component.
+ */
 const Footer = () => {
     return (
         <footer className="bg-zinc-950 text-zinc-400 py-12 px-4 md:px-6 border-t border-zinc-800">

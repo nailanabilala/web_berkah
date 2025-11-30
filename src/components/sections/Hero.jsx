@@ -3,9 +3,23 @@ import { PenTool, Star, Truck, CheckCircle, MapPin } from 'lucide-react';
 import Button from '../ui/Button';
 import Badge from '../ui/Badge';
 
+/**
+ * Hero component for the landing page.
+ *
+ * Displays the main headline, call-to-action buttons, and key selling points
+ * (features) of the service.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Hero component.
+ */
 const Hero = () => {
     const whatsappNumber = "6285888185382";
 
+    /**
+     * Opens a WhatsApp chat with a pre-filled message.
+     *
+     * @param {string} message - The message to pre-fill in the WhatsApp chat.
+     */
     const handleWhatsAppClick = (message) => {
         const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');

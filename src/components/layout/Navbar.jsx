@@ -3,11 +3,23 @@ import { MessageCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Button from '../ui/Button';
 
+/**
+ * Navbar component that provides the main navigation for the application.
+ *
+ * It includes a logo, navigation links, and a call-to-action button for consultation.
+ * The navbar changes appearance on scroll and includes a mobile menu.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Navbar component.
+ */
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
+        /**
+         * Handles scroll events to toggle the scrolled state.
+         */
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 20);
         };
@@ -17,6 +29,11 @@ const Navbar = () => {
 
     const whatsappNumber = "6285888185382";
 
+    /**
+     * Opens a WhatsApp chat with a pre-filled message.
+     *
+     * @param {string} message - The message to pre-fill in the WhatsApp chat.
+     */
     const handleWhatsAppClick = (message) => {
         const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
